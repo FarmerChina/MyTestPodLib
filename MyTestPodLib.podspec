@@ -10,27 +10,32 @@ Pod::Spec.new do |s|
   s.name             = 'MyTestPodLib'
   s.version          = '0.1.0'
   s.summary          = 'A short description of MyTestPodLib.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-
+  # 仓库主页
   s.homepage         = 'https://github.com/FarmerChina/MyTestPodLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  
   s.author           = { 'FarmerChina' => 'ningguotong1142115009@outlook.com' }
+  
+  # git仓库地址
   s.source           = { :git => 'https://github.com/FarmerChina/MyTestPodLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
+  # 开发平台
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'MyTestPodLib/Classes/**/*'
+  
+  # 封装的framework名称
+  s.ios.vendored_frameworks = 'MyTestPodLib.xcframework'
+  
+  # 项目文件所在位置 上面有加密的就不用这个了
+#  s.source_files = 'MyTestPodLib/Classes/**/*'
+  
+  # 我们用到的swift版本
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'MyTestPodLib' => ['MyTestPodLib/Assets/*.png']

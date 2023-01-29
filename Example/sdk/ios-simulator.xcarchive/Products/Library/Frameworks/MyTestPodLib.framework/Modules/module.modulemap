@@ -1,0 +1,11 @@
+framework module MyTestPodLib {
+  umbrella header "MyTestPodLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MyTestPodLib.Swift {
+  header "MyTestPodLib-Swift.h"
+  requires objc
+}
