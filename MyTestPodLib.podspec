@@ -31,6 +31,9 @@ TODO: Add long description of the pod here.
   # 封装的framework名称
   s.ios.vendored_frameworks = 'MyTestPodLib.xcframework'
   
+  # 报错：file patterns: The `vendored_frameworks` pattern did not match any file
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  
   # 项目文件所在位置 上面有加密的就不用这个了
 #  s.source_files = 'MyTestPodLib/Classes/**/*'
   
