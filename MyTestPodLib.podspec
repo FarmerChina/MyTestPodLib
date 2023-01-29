@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyTestPodLib'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of MyTestPodLib.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: edit xcframework
                        DESC
   # 仓库主页
   s.homepage         = 'https://github.com/FarmerChina/MyTestPodLib'
